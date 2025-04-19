@@ -14,6 +14,7 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
     "chatapp": "file:..",
     "cloudinary": "^2.6.0",
     "cookie-parser": "^1.4.7",

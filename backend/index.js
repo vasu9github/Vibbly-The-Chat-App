@@ -7,13 +7,14 @@ import messageRoutes from './routes/messageRoutes.js'
 import cors from 'cors'
 import { app , server  } from './lib/socket.js';
 import path from 'path';
+import bodyParser from 'body-parser';
 
 
 dotenv.config();
 const PORT = process.env.PORT
 const __dirname = path.resolve();
 
-app.use(express.json())
+app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(cors({ origin:'http://localhost:5173', credentials:true } ))
 
